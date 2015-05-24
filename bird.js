@@ -6,7 +6,7 @@ var new_pos, current_pos, dx, dy, distance, speed, face_dir, scrollPosition;
 
 var isios = false;
 var isipad = false;
-
+var maxPositions = 6;
 /// Called when document has been loaded
 $(document).ready(function(){
 
@@ -34,7 +34,7 @@ $(window).load(function() {
 	current_pos = $('#bird').position();
 	new_pos = $('#bird').position();
 	new_pos.left = -196;
-	new_pos.top = 95;
+	new_pos.top = -95;
 	$('#bird').css({left: new_pos.left, top: new_pos.top});
 
 	// // animation
@@ -63,9 +63,9 @@ function bird_flyTo(dest) {
 
 	// select random location, not equal to current
 	if (!dest) {
-		dest = Math.floor(randomXToY(1,3));
+		dest = Math.floor(randomXToY(1,maxPositions));
 		while(current_dest == dest)
-			dest = Math.floor(randomXToY(1,3));
+			dest = Math.floor(randomXToY(1,maxPositions));
 	}
 
 	current_dest = dest;
