@@ -71,21 +71,31 @@ function bird_flyTo(dest) {
 	current_dest = dest;
 
 	// Set target position
-	// tree left
 	if (dest == 1) {
-		new_pos.left = -196;
-		new_pos.top = 95;
+		new_pos.left = 210;
+		new_pos.top = 26;
 	}
-	// tree right
-	if (dest == 3) {
-		new_pos.left = 397;
-		new_pos.top = 144;
+	else if (dest == 2) {
+		new_pos.left = 345;
+		new_pos.top = 24;
 	}
-	// windmill
-	if (dest == 2) {
-		new_pos.left = 235;
-		new_pos.top = 38;
+	else if (dest == 3) {
+		new_pos.left = 405;
+		new_pos.top = 26;
 	}
+	else if (dest == 4) {
+		new_pos.left = 505;
+		new_pos.top = 23;
+	}
+	else if (dest == 5) {
+		new_pos.left = 230;
+		new_pos.top = 26;
+	}
+	else if (dest == 6) {
+		new_pos.left = 460;
+		new_pos.top = 35;
+	}
+
 
 	current_pos = $('#bird').position();
 
