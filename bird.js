@@ -6,7 +6,7 @@ var new_pos, current_pos, dx, dy, distance, speed, face_dir, scrollPosition;
 
 var isios = false;
 var isipad = false;
-var maxPositions = 6;
+var maxPositions = 17;
 /// Called when document has been loaded
 $(document).ready(function(){
 
@@ -84,7 +84,7 @@ function bird_flyTo(dest) {
 		new_pos.top = 26;
 	}
 	else if (dest == 4) {
-		new_pos.left = 505;
+		new_pos.left = 508;
 		new_pos.top = 23;
 	}
 	else if (dest == 5) {
@@ -92,9 +92,60 @@ function bird_flyTo(dest) {
 		new_pos.top = 26;
 	}
 	else if (dest == 6) {
+		new_pos.left = 255;
+		new_pos.top = 35;
+	}
+	else if (dest == 7) {
+		new_pos.left = 275;
+		new_pos.top = 35;
+	}
+	else if (dest == 8) {
+		new_pos.left = 290;
+		new_pos.top = 35;
+	}
+	else if (dest == 9) {
+		new_pos.left = 310;
+		new_pos.top = 35;
+	}
+	else if (dest == 10) {
+		new_pos.left = 320;
+		new_pos.top = 35;
+	}
+	else if (dest == 11) {
+		new_pos.left = 365;
+		new_pos.top = 35;
+	}
+	else if (dest == 12) {
+		new_pos.left = 430;
+		new_pos.top = 35;
+	}
+	else if (dest == 13) {
+		new_pos.left = 445;
+		new_pos.top = 35;
+	}
+	else if (dest == 14) {
 		new_pos.left = 460;
 		new_pos.top = 35;
 	}
+	else if (dest == 15) {
+		new_pos.left = 475;
+		new_pos.top = 35;
+	}
+	else if (dest == 16) {
+		new_pos.left = 498;
+		new_pos.top = 35;
+	}
+	else if (dest == 17) {
+		new_pos.left = 530;
+		new_pos.top = 35;
+	}
+
+
+
+
+
+
+
 
 
 	current_pos = $('#bird').position();
