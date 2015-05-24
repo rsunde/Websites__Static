@@ -43,7 +43,7 @@ $(window).load(function() {
 	$('#bird').spState(2);
 
 	// begin timer
-	setTimeout('bird_flyTo(2)',randomXToY(200,1000));
+	setTimeout('bird_flyTo(randomXToY(1,maxPositions))',randomXToY(200,1000));
 
 	// mouse bindings
 	$('#bird').hover(function(){
