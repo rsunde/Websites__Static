@@ -1,0 +1,34 @@
+{
+  "name" : "Ronnie Sunde",
+  "version" : "1.0",
+  "Age" : "41",
+  "Description" : "Simple and happy-go-lucky person",
+  "Dependencies" : {
+     "Dog" : "*",
+     "Drinks" : {
+         "EnergyDrinks" : "*",
+         "Tea" : "Milk",
+         "Coffee" : "Cream and Milk"
+         "Beer" : {
+            "Pale Ale",
+            "Wheat"
+         },
+      },
+   },
+   "DevDependencies" : {
+     "Lenovo Yoga Pro 2" : "Windows 10", 
+     "Visual Studio" : "2015",
+     "Android Studio" : "11",
+     "IntelliJ" : "15",
+     "WebStorm" : "11",
+     "Languages" : {
+        "C#",
+        "JavaScript",
+        "Java"
+      }
+     "Mongo",
+     "Express",
+     "Angular",
+     "Node/IO"
+   }	 
+}
