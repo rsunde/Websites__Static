@@ -25,7 +25,7 @@
         "C#" : "*",
         "JavaScript" : "*",
         "Java" : "*"
-      }
+     },
      "Mongo" : "*",
      "Express" : "*",
      "Angular" : "*",
