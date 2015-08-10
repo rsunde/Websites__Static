@@ -8,7 +8,7 @@
      "Drinks" : {
          "EnergyDrinks" : "*",
          "Tea" : "Milk",
-         "Coffee" : "Cream and Milk"
+         "Coffee" : "Cream and Milk",
          "Beer" : {
             "Pale Ale" : "*",
             "Wheat" : "*"
