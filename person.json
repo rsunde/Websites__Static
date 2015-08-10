@@ -10,8 +10,8 @@
          "Tea" : "Milk",
          "Coffee" : "Cream and Milk"
          "Beer" : {
-            "Pale Ale",
-            "Wheat"
+            "Pale Ale" : "*",
+            "Wheat" : "*"
          },
       },
    },
@@ -22,13 +22,13 @@
      "IntelliJ" : "15",
      "WebStorm" : "11",
      "Languages" : {
-        "C#",
-        "JavaScript",
-        "Java"
+        "C#" : "*",
+        "JavaScript" : "*",
+        "Java" : "*"
       }
-     "Mongo",
-     "Express",
-     "Angular",
-     "Node/IO"
+     "Mongo" : "*",
+     "Express" : "*",
+     "Angular" : "*",
+     "Node/IO" : "*"
    }	 
 }
