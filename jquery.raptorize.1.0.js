@@ -25,6 +25,9 @@
     ];
     var raptorCounter = 0;
 
+    var code = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66, 65);
+    var codeBuffer = "";
+
     $.fn.raptorize = function (options) {
 
         var randomImageUrl = raptorUrls[Math.floor(Math.random() * raptorUrls.length)];
@@ -99,12 +102,10 @@
                     }
                 })
             } else if (options.enterOn == 'konami-code') {
-                var code1 = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66, 65);
-                var codeBuffer = "";
                 $(document).keyup(function (e) {
                     codeBuffer += String.fromCharCode(e.which);
-                    if (code1.substring(0, codeBuffer.length) == codeBuffer) {
-                        if (code1.length == codeBuffer.length) {
+                    if (code.substring(0, codeBuffer.length) == codeBuffer) {
+                        if (code.length == codeBuffer.length) {
                             $("body").raptorize();
                             codeBuffer = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66); // one shorter for repeating with the A button =)
                         }
