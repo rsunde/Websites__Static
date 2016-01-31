@@ -13,7 +13,7 @@
 
         //Yo' defaults
         var defaults = {  
-            enterOn: 'click', //timer, konami-code, click
+            enterOn: 'konami-code', //timer, konami-code, click
             delayTime: 5000 //time before raptor attacks on timer mode
             };  
         
@@ -26,11 +26,11 @@
 			var audioSupported = false;
 			//Stupid Browser Checking which should be in jQuery Support
 			if ($.browser.mozilla && $.browser.version.substr(0, 5) >= "1.9.2" || $.browser.webkit) { 
-				audioSupported = true;
+				//audioSupported = true;
 			}
 			
 			//Raptor Vars
-			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="raptor.png" />'
+			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="images/raptor.png" />'
 			var raptorAudioMarkup = '<audio id="elRaptorShriek" preload="auto"><source src="raptor-sound.mp3" /><source src="raptor-sound.ogg" /></audio>';	
 			var locked = false;
 			
