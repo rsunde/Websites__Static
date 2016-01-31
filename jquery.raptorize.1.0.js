@@ -10,17 +10,18 @@
 
 
 (function ($) {
+    var raptorImageUrl = "https://github.com/rsunde/Websites__Static/images/";
     var raptorUrls = [
-        '/images/raptor1.png',
-        '/images/raptor2.png',
-        '/images/raptor3.png',
-        '/images/raptor4.png',
-        '/images/raptor5.png',
-        '/images/raptor6.png',
-        '/images/raptor7.png',
-        '/images/raptor8.png',
-        '/images/raptor9.png',
-        '/images/prehistoric_trends.png'
+        raptorImageUrl + 'raptor1.png',
+        raptorImageUrl + 'raptor2.png',
+        raptorImageUrl + 'raptor3.png',
+        raptorImageUrl + 'raptor4.png',
+        raptorImageUrl + 'raptor5.png',
+        raptorImageUrl + 'raptor6.png',
+        raptorImageUrl + 'raptor7.png',
+        raptorImageUrl + 'raptor8.png',
+        raptorImageUrl + 'raptor9.png',
+        raptorImageUrl + 'prehistoric_trends.png'
     ];
     var raptorCounter = 0;
 
