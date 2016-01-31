@@ -10,7 +10,7 @@
 
 
 (function ($) {
-    var raptorImageUrl = "https://github.com/rsunde/Websites__Static/images/";
+    var raptorImageUrl = "http://rsunde.github.io/Websites__Static/images/";
     var raptorUrls = [
         raptorImageUrl + 'raptor1.png',
         raptorImageUrl + 'raptor2.png',
