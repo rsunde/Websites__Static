@@ -90,35 +90,24 @@
                     });
                 });
             }
-
-            //Determine Entrance
-            if (options.enterOn == 'timer') {
-                setTimeout(init, options.delayTime);
-            } else if (options.enterOn == 'click') {
-                _this.bind('click', function (e) {
-                    e.preventDefault();
-                    if (!locked) {
-                        init();
-                    }
-                })
-            } else if (options.enterOn == 'konami-code') {
-                $(document).keyup(function (e) {
-                    codeBuffer += String.fromCharCode(e.which);
-                    if (code.substring(0, codeBuffer.length) == codeBuffer) {
-                        if (code.length == codeBuffer.length) {
-                            $("body").raptorize();
-                            codeBuffer = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66); // one shorter for repeating with the A button =)
-                        }
-                    } else {
-                        codeBuffer = "";
-                    }
-                });
-            }
-
         }); //each call
     } //orbit plugin call
 })(jQuery);
 
-$("body").raptorize();
+// konami code - up up down down left right left right b a
+var code = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66, 65);
+var codeBuffer = "";
+$(document).keyup(function (e) {
+    codeBuffer += String.fromCharCode(e.which);
+    if (code.substring(0, codeBuffer.length) == codeBuffer) {
+        if (code.length == codeBuffer.length) {
+            $("body").raptorize();
+            codeBuffer = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66);
+        }
+    } else {
+        codeBuffer = "";
+    }
+});
+
 
         
