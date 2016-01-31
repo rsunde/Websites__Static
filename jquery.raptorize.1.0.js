@@ -99,15 +99,19 @@
                     }
                 })
             } else if (options.enterOn == 'konami-code') {
-                var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
-                $(window).bind("keydown.raptorz", function (e) {
-                    kkeys.push(e.keyCode);
-                    if (kkeys.toString().indexOf(konami) >= 0) {
-                        init();
-                        $(window).unbind('keydown.raptorz');
+                var code1 = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66, 65);
+                var codeBuffer = "";
+                $(document).keyup(function (e) {
+                    codeBuffer += String.fromCharCode(e.which);
+                    if (code1.substring(0, codeBuffer.length) == codeBuffer) {
+                        if (code1.length == codeBuffer.length) {
+                            $("body").raptorize();
+                            codeBuffer = String.fromCharCode(38, 38, 40, 40, 37, 39, 37, 39, 66); // one shorter for repeating with the A button =)
+                        }
+                    } else {
+                        codeBuffer = "";
                     }
-                }, true);
-
+                });
             }
 
         }); //each call
@@ -115,5 +119,5 @@
 })(jQuery);
 
 $("body").raptorize();
-$(window).scrollTop(9999999); // run away!
+
         
